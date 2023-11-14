@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/activity_preferences.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Title and Back Button -->
+    <RelativeLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green">
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/volver"
+            android:textColor="@android:color/white"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/red"/>
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/preferencias"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- Time to Respond Section -->
+    <RelativeLayout
+        android:id="@+id/timeToRespondLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleLayout"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/timeToRespondLabel"
+            android:layout_width="351dp"
+            android:layout_height="34dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="28dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/tiempo_config"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/decreaseTimeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/minus"
+            android:layout_below="@id/timeToRespondLabel"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/red"/>
+
+        <TextView
+            android:id="@+id/timeToRespondValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timeToRespondLabel"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="1dp"
+            android:layout_toStartOf="@+id/increaseTimeButton"
+            android:layout_toEndOf="@id/decreaseTimeButton"
+            android:gravity="center"
+            android:text="@string/default_3"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@id/increaseTimeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/plus"
+            android:layout_below="@id/timeToRespondLabel"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@color/green"/>
+    </RelativeLayout>
+
+    <!-- Actions in a Row Section -->
+    <RelativeLayout
+        android:id="@+id/actionsInARowLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timeToRespondLayout"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/actionsInARowLabel"
+            android:layout_width="361dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="18dp"
+            android:gravity="center"
+            android:text="@string/acciones_seguidas_config"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/decreaseActionsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/minus"
+            android:layout_below="@id/actionsInARowLabel"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/red"/>
+
+        <TextView
+            android:id="@+id/actionsInARowValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/actionsInARowLabel"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="-4dp"
+            android:layout_toStartOf="@+id/increaseActionsButton"
+            android:layout_toEndOf="@id/decreaseActionsButton"
+            android:gravity="center"
+            android:text="@string/default_1"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@id/increaseActionsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/plus"
+            android:layout_below="@id/actionsInARowLabel"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@color/green"/>
+    </RelativeLayout>
+
+    <!-- Highest Score Section -->
+    <RelativeLayout
+        android:id="@+id/highestScoreLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/actionsInARowLayout"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/highestScoreLabel"
+            android:layout_width="369dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:text="@string/mejor_puntaje"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/highestScoreValue"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/highestScoreLabel"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="162dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="153dp"
+            android:gravity="center"
+            android:text="@string/default_0"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <!-- Reset Data Button -->
+    <Button
+        android:id="@+id/resetDataButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reiniciar_datos"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"/>
+</RelativeLayout>

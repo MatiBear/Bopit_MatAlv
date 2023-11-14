@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/yellow">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bop_it"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/black"/>
+
+    <!-- Play Button -->
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/jugar_solitario"
+        android:onClick="onPlayButtonClick"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/red"/>
+
+    <!-- Preferences Button -->
+    <Button
+        android:id="@+id/preferencesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/preferencias"
+        android:onClick="onPreferencesButtonClick"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/blue"/>
+
+    <!-- About Button -->
+    <Button
+        android:id="@+id/aboutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/acerca_de"
+        android:onClick="onAboutButtonClick"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/green"/>
+
+</LinearLayout>
